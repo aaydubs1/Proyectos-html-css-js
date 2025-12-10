@@ -1,0 +1,213 @@
+:root {
+  font-size: 100%;
+  font-family: system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+*::before,
+*::after {
+  display: block;
+}
+
+img,
+picture,
+video,
+iframe,
+figure,
+canvas {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: initial;
+  object-fit: cover;
+  object-position: center center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li,
+menu,
+summary {
+  list-style-type: none;
+}
+
+ol {
+  counter-reset: revert;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em,
+pre,
+code,
+mark,
+del {
+  font: inherit;
+  line-height: 1em;
+  text-decoration: none;
+  color: inherit;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+
+mark {
+  background-color: transparent;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: none;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  appearance: none;
+}
+
+fieldset {
+  border: none;
+}
+
+::placeholder {
+  color: unset;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+table,
+tr,
+td,
+th,
+tbody,
+thead,
+tfoot {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: inherit;
+}
+
+svg {
+  width: 100%;
+  height: initial;
+  display: block;
+  fill: currentColor;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5em;
+  color: inherit;
+  hyphens: auto;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Box-wrapper{
+  
+min-height: 12rem;
+border-radius: 20px;
+background: #f4eded;
+box-shadow:  20px 20px 60px #c3bebe,
+             -20px -20px 60px #ffffff;
+
+}
+
+.Box{
+    padding: 1rem;
+    
+   
+}
+
+.Box-grid{
+  
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    padding: 0.5rem;
+
+    
+}
+
+.button{
+     color: #090909;
+  padding: 0.5em;
+  font-size: 14px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8e6;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 5px #c5c5c560, -6px -6px 6px #ffffff;
+}
+
+.button.active {
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.Box-column-button{}
+.Box-parrafo{
+  
+    position: relative;
+    padding: 1rem;
+}
+.parrafo{
+    position: absolute;
+    opacity: 0;
+    transition: .3s;
+    line-height: 1.1;
+    color: #828282;
+}
+.parrafo.visible {
+    opacity: 1;
+}
+
