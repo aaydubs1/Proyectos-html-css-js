@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="Wrapper">
+ 
+  <h1 class="h1">Detalles de matriculación</h1>
+<main class="Main">
+
+<div class="Main Columna font">
+      <div class="Columna-container">
+         <h2 class="Columna-h2">Datos de alumno</h2>
+        <form class="Columna-article">
+             
+             <div class="Columna-pregunta">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Inserta aquí tu nombre">
+                
+             </div>
+             <div class="Columna-pregunta">
+                <label for="apellido">Apellido/s</label>
+                <input type="text" id="apellido"  placeholder="Inserta aquí tus apellidos">
+             </div>
+             <div class="Columna-pregunta">
+                <label for="fecha">Fecha de Nacimiento</label>
+                <input type="date" id="fecha" placeholder="dd/mm/aaa">
+             </div>
+             <div class="Columna-pregunta">
+                <label for="correo"> Correo</label>
+                <input type="email" id="correo" placeholder="Introduce aquí tu email">
+             </div>
+             <div class="Columna-pregunta">
+             <label for="tel">Teléfono</label>
+             <input type="tel" id="tel" placeholder="Móvil con prefijo internacional">
+             </div>
+            </form>
+        </div>
+
+        <div class="Columna-container">
+         <h2 class="Columna-h2">Informacion legal</h2>
+        <form class="Columna-article">
+             <div class="Columna-pregunta">
+                <label for="domicilio">País de domicilio actual</label>
+                <select name="pais" id="domicilio">
+                    <option value="España">España</option>
+                    <option value="mx">México</option>
+                    <option value="ar">Argentina</option>
+                </select>
+             </div>
+             <div class="Columna-pregunta">
+                <label for="nacionalidad"> Nacionalidad</label>
+                <select name="nacionalidad" id="nacionalidad">
+                      <option value="" disabled selected>Selecciona un país</option>
+                    <option value="España">España</option>
+                    <option value="mx">México</option>
+                    <option value="ar">Argentina</option>
+                </select>
+             </div>
+             <div class="Columna-pregunta">
+                <label for="documento">Tipo de documento</label>
+                <select placeholder="Selecciona una opción" id="documento">
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="nie">nie</option>
+                    <option value="dni">dni</option>
+                    <option value="pasaporte">pasaporte</option>
+                </select>
+             </div>
+
+             <div class="Columna-pregunta">
+               <label for="numero-documento">Número de documento</label>
+               <input type="text" id="numero-documento" placeholder="En mayusculas y sin guiones"></input>
+             </div>
+            </form>
+        </div>
+
+        <div class="Columna-container">
+         <h2 class="Columna-h2">Datos de facturación</h2>
+        <form class="Columna-article">
+             <div class="Columna-pregunta">
+                <label for="Factura">Factura a nombre de empresa</label>
+                <select id="Factura">
+                    <option value="No">No</option>
+                    <option value="Si">Sí</option>
+                </select>
+             </div>
+             <div class="Columna-pregunta">
+                <label for="Domi">Domicilio a alumno/a</label>
+                <input type="text" placeholder="Introduce aquí tu dirección actual" id="Domi">
+             </div>
+             <div class="Columna-pregunta">
+               <label for="poblacion">Poblacion alumno/a</label>
+               <input type="text" id="poblacion">
+             </div>
+             <div class="Columna-pregunta">
+               <label for="provincia">Provincia alumno/a</label>
+               <input type="text" id="provincia">
+             </div>
+             <div class="Columna-pregunta">
+               <label for="cp">Código postal alumno/a</label>
+               <input type="text" id="cp">
+             </div>
+             <br>
+            
+               </form>
+                <div class="Columna-pregunta--flex">
+              <input type="checkbox"  id="checkbox">
+                  <label  for="checkbox"> Tus datos serán utilizados para poder prestarte adecuadamente los servicios de formación y para mejorar nuestro servicio. Consulta más abajo nuestra política de privacidad</label>
+        </div>
+        </div>
+<div class="Columna-container">
+    <h2 class="Columna-h2">Método de pago</h2>
+
+    <form class="Columna-form">
+        
+        <div class="Columna-pregunta--flex">
+            <input type="radio" id="tarjeta" name="pago">
+            <label for="tarjeta">Pago con tarjeta</label>
+            <span class="Columna-span">Opción preferida (sin comisiones).</span>
+        </div>
+
+        <div class="Columna-pregunta--flex">
+            <input type="radio" id="paypal" name="pago">
+            <label for="paypal">Paypal</label>
+        </div>
+
+        <div class="Columna-pregunta--flex">
+            <input type="radio" id="pagos" name="pago">
+            <label for="pagos">Fracciona el pago (3/6/10 meses).</label>
+        </div>
+
+        <div class="Columna-pregunta--flex">
+            <input type="radio" id="recibos" name="pago">
+            <label for="recibos">Fracciona mediante recibos bancarios.</label>
+        </div>
+
+        <div class="Columna-pregunta--flex">
+            <input type="radio" id="bizum" name="pago">
+            <label for="bizum">Bizum</label>
+        </div>
+
+        <div class="Columna-pregunta--flex">
+            <input type="radio" id="banco" name="pago">
+            <label for="banco">Transferencia bancaria</label>
+        </div>
+
+        <div class="Columna-pregunta--flex">
+            <input type="radio" id="pago-tarjeta" name="pago">
+            <label for="pago-tarjeta">Tarjeta (método alternativo)</label>
+        </div>
+
+        <div class="Columna-pregunta--flex">
+            <input type="radio" id="19-meses" name="pago">
+            <label for="19-meses">Aplázame (hasta 19 meses)</label>
+        </div>
+
+        <div class="Columna-pregunta--flex">
+            <span class="Columna-span">Tus datos serán utilizados para poder prestarte adecuadamente los servicios de formación y para mejorar nuestro servicio. Consulta la política de privacidad.</span>
+            <br>
+            <input type="checkbox" id="terminos">
+            <label for="terminos">He leído y estoy de acuerdo con los términos y condiciones de la web</label>
+        </div>
+
+    </form>
+    <button class="Columna-button Columna-h2"> Continuar con proceso </button>
+</div>
+
+
+    
+</div>
+<div class="Main Sticky">
+   <article class="Columna-article font ">
+      <div class="Rows-div line-bottom">
+         <span class="Rows-span"><b>Estudio</b></span>
+         <span class="Rows-span"><b>Subtotal</b></span>
+      </div>
+         <h2 class="Rows-h2 margin ">Curso de Diseño Web con HTML5 y CSS3 </h2>
+         <h3 class="Rows-h3 margin"> <b>Ubicación:</b> Online</h3>
+         <div class="Rows-div margin">
+            <h3 class="Rows-h3"><b>Convocatoria:</b> Enero 2026</h3>
+            <span class="Rows-span">1.900,00€</span>
+            </div>
+            <h3 class="Rows-h3 margin"><b>Tipo de diploma:</b> Diploma de CEI: Centro de Estudios de Innovación (Título Privado)</h3>
+            <div class="Rows-div margin ">
+            <h3 class="Rows-h3">Subtotal</h3>
+            <span class="Rows-span">1.900,00€</span>
+            </div>
+            <div>
+            <div class="Rows-div line-top margin">
+            <h3 class="Rows-h3">Subtotal</h3>
+            <span class="Rows-span"><b>1.900,00€</b></span>
+         </div>
+   </article>
+</div>
+</main>
+</div>
+    
+</body>
+</html>

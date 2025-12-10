@@ -1,0 +1,282 @@
+:root {
+  font-size : 100%;
+   font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  scroll-behavior : smooth;
+
+}
+* , *::before , *::after {
+  margin : 0;
+  padding : 0;
+  border : 0;
+  box-sizing : border-box;
+  vertical-align : baseline;
+}
+*::before , *::after {
+  display : block;
+}
+img , picture , video , iframe , figure , canvas {
+  max-width : 100%;
+  display : block;
+  width : 100%;
+  height : initial;
+  object-fit : cover;
+  object-position : center center;
+}
+a {
+  display : block;
+  text-decoration : none;
+  color : inherit;
+  font :  inherit;
+}
+p a {
+  display : inline;
+}
+li , menu, summary {
+  list-style-type : none;
+}
+ol {
+  counter-reset : revert;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , p , span , a , strong , blockquote , i , u , em , pre , code , mark , del {
+  font :  inherit;
+  line-height :  1em;
+  text-decoration :  none;
+  color : inherit;
+  overflow-wrap : break-word;
+  text-wrap : pretty;
+}
+mark {
+  background-color : transparent;
+}
+blockquote::before , blockquote::after , q::before , q::after {
+  content : none;
+}
+form , input , textarea , select , button , label {
+  font :  inherit;
+  hyphens : auto;
+  background-color : transparent;
+  color : inherit;
+ 
+  
+}
+fieldset {
+  border : none;
+}
+::placeholder {
+  color : unset;
+}
+button , label {
+  cursor : pointer;
+}
+table , tr , td , th , tbody , thead , tfoot {
+  border-collapse : collapse;
+  border-spacing : 0;
+  font : inherit;
+}
+
+svg {
+  
+  width : 100%;
+  height : initial;
+  display : block;
+  fill : currentColor;
+}
+body {
+
+  line-height : 1.5em;
+  color : inherit;
+  hyphens : auto;
+  font-smooth : always;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing : grayscale;
+ 
+   background-color: blanchedalmond;
+   
+}
+
+
+
+
+
+
+
+
+
+.Main{
+    width: 100% ;
+    max-width: 1600px;
+    min-height: 100vh;
+  
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: start;
+}
+
+.h1{
+  margin: 2rem;
+  font-size: 1.8rem;
+}
+
+.Main.Columna{
+    width: 60% ;
+   
+ 
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2fr, 1fr, 3fr, 4fr);
+ 
+    justify-content: start;
+    align-content: start;
+
+    border: .0625rem solid black
+}
+
+.Columna-container{
+  display: flex;
+  flex-flow: column;
+  border-bottom: .0625rem solid black;
+}
+
+
+
+.Columna-article{
+  width: 100%;
+
+  
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(380px, 1fr));
+}
+
+.Columna-pregunta{
+  
+    width: 100%;
+ 
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+   
+ 
+}
+
+
+
+
+.Columna-pregunta--flex{
+ padding: 1rem;
+ gap: 1rem;
+}
+.flex{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.Main .Sticky{
+    width: 35%;
+
+    position: sticky;
+    top: 0;
+  
+
+    
+}
+
+.Sticky .Columna-article{
+  display: flex;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  flex-flow: column nowrap;
+  gap: 1rem;
+  padding: 1rem;
+
+}
+
+
+.Sticky .Columna-article .Rows-div{
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.line-bottom{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.466);
+}
+
+.line-top{
+  border-top: 1px solid rgba(0, 0, 0, 0.466);
+}
+
+.Rows-h2{
+  font-size: 2rem;
+}
+
+.Rows-div{
+  display: flex;
+  gap: 2rem;
+}
+
+.font{
+  font-size: 1rem;
+  line-height: 1.2rem;
+
+}
+
+
+
+.margin{
+  margin: 1rem 0 0 0;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+ textarea{
+  width: 100%;
+  padding: 0.8rem; 
+  margin-bottom: 0.9375rem; 
+  border: 1px solid #000000; 
+  border-radius: .25rem;
+  background-color: rgba(224, 200, 168, 0.603);
+
+  
+}
+
+select {
+  width: 100%;
+  padding: 0.8rem; 
+  margin-bottom: .9375rem; 
+
+  border-radius: 4px; 
+  background-color: rgba(224, 200, 168, 0.603);
+}
+
+input[type="radio"],
+input[type="checkbox"] 
+{
+  width: 0.8rem;   
+  height: 0.8rem;  
+  margin: .3125rem;
+}
+
+.Columna-h2{
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.Columna-button{
+
+background-color:rgb(0, 0, 0);
+  margin: 1.5rem  ;
+  color:blanchedalmond;
+font-size: 1.2rem;
+
+}
